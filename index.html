@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flavour Feast | Premium Milk Cakes</title>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav__inner">
+        <div class="nav__logo">
+          <a href="#home">
+            <img src="assets/logo1.png" alt="Flavour Feast logo" />
+          </a>
+        </div>
+
+        <button class="nav__menu__btn" id="menu-btn" aria-label="Toggle menu">
+          <i class="ri-menu-3-line"></i>
+        </button>
+
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#booking" class="nav-link">Book</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+        </ul>
+
+        <a href="#booking" class="nav__cta btn btn-primary">Order Now</a>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════ MOBILE FULLSCREEN MENU ═══════════════════ -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu__grain"></div>
+
+      <div class="mobile-menu__top">
+        <div class="mobile-menu__logo">Flavour <em>Feast</em></div>
+        <button class="mobile-menu__close" id="mobile-menu-close" aria-label="Close menu">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-menu__links">
+        <li class="mobile-menu__item">
+          <span class="mobile-menu__num">01</span>
+          <a href="#home" class="mobile-menu__link">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <span class="mobile-menu__num">02</span>
+          <a href="#menu" class="mobile-menu__link">Menu</a>
+        </li>
+        <li class="mobile-menu__item">
+          <span class="mobile-menu__num">03</span>
+          <a href="#gallery" class="mobile-menu__link">Gallery</a>
+        </li>
+        <li class="mobile-menu__item">
+          <span class="mobile-menu__num">04</span>
+          <a href="#booking" class="mobile-menu__link">Book</a>
+        </li>
+        <li class="mobile-menu__item">
+          <span class="mobile-menu__num">05</span>
+          <a href="#about" class="mobile-menu__link">About</a>
+        </li>
+        <li class="mobile-menu__item">
+          <span class="mobile-menu__num">06</span>
+          <a href="#blog" class="mobile-menu__link">Blog</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu__bottom">
+        <div class="mobile-menu__rule"></div>
+        <a href="#booking" class="mobile-menu__cta">Place an Order Now</a>
+        <div class="mobile-menu__socials">
+          <a href="https://www.instagram.com/flavor__feast?igsh=MXNmd3cxdDQ2Z3FlNQ==" target="_blank" rel="noopener" class="mobile-menu__soc" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+          <a href="https://www.tiktok.com/@flavor_feastt?_r=1&_t=ZS-97CoAifK5bQ" target="_blank" rel="noopener" class="mobile-menu__soc" aria-label="TikTok"><i class="ri-tiktok-fill"></i></a>
+          <a href="https://wa.me/2348107755333" target="_blank" rel="noopener" class="mobile-menu__soc" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <header class="hero" id="home">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <span class="hero-kicker">Premium Milk Cake Brand</span>
+        <h1 class="hero-title">
+          Sweet Moments, Rich Flavors
+        </h1>
+
+        <p class="hero-text">
+          Indulge in our creamy milk cakes and authentic mandi rice with chicken,
+          carefully crafted to satisfy every craving. Whether you're celebrating a
+          special occasion or enjoying a delicious meal, <strong>Flavour Feast</strong>
+          delivers taste you’ll remember.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Explore Menu</a>
+          <a href="#booking" class="btn btn-outline">Book Now</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </header>
+
+    <!-- ═══════════════════ MENU ═══════════════════ -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-intro">
+          <span class="section-label">Our Menu</span>
+          <h2 class="section-title">Signature Milk Cakes</h2>
+          <p class="section-copy">
+            Soft, rich, beautifully layered milk cakes — made to feel as good as they taste.
+          </p>
+        </div>
+
+        <div class="swiper myMenuSwiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <article class="menu-card">
+                <div class="menu-image-wrap">
+                  <img src="assets/menu1.PNG" alt="Classic Milk Cake" />
+                  <span class="card-badge">Best Seller</span>
+                </div>
+                <div class="menu-card-body">
+                  <h3>Classic Milk Cake</h3>
+                  <p class="menu-desc">A soft and creamy favorite with a smooth, delicate finish.</p>
+                  <div class="card-footer-row">
+                    <span class="menu-price">₦3,500</span>
+                    <a href="#booking" class="card-order-btn">Order</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="menu-card">
+                <div class="menu-image-wrap">
+                  <img src="assets/menu2.PNG" alt="Caramel Milk Cake" />
+                </div>
+                <div class="menu-card-body">
+                  <h3>Caramel Milk Cake</h3>
+                  <p class="menu-desc">Rich caramel notes with a light, airy texture.</p>
+                  <div class="card-footer-row">
+                    <span class="menu-price">₦4,000</span>
+                    <a href="#booking" class="card-order-btn">Order</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="menu-card">
+                <div class="menu-image-wrap">
+                  <img src="assets/menu3.PNG" alt="Luxury Milk Cake" />
+                  <span class="card-badge premium">Premium</span>
+                </div>
+                <div class="menu-card-body">
+                  <h3>Luxury Milk Cake</h3>
+                  <p class="menu-desc">An elegant layered treat made for life's special moments.</p>
+                  <div class="card-footer-row">
+                    <span class="menu-price">₦4,500</span>
+                    <a href="#booking" class="card-order-btn">Order</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="menu-card">
+                <div class="menu-image-wrap">
+                  <img src="assets/menu4.PNG" alt="Special Milk Cake" />
+                </div>
+                <div class="menu-card-body">
+                  <h3>Special Milk Cake</h3>
+                  <p class="menu-desc">Beautifully finished and crafted for a premium taste experience.</p>
+                  <div class="card-footer-row">
+                    <span class="menu-price">₦5,000</span>
+                    <a href="#booking" class="card-order-btn">Order</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Duplicates for seamless infinite loop -->
+            <div class="swiper-slide">
+              <article class="menu-card">
+                <div class="menu-image-wrap">
+                  <img src="assets/menu1.PNG" alt="Classic Milk Cake" />
+                  <span class="card-badge">Best Seller</span>
+                </div>
+                <div class="menu-card-body">
+                  <h3>Classic Milk Cake</h3>
+                  <p class="menu-desc">A soft and creamy favorite with a smooth, delicate finish.</p>
+                  <div class="card-footer-row">
+                    <span class="menu-price">₦3,500</span>
+                    <a href="#booking" class="card-order-btn">Order</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="menu-card">
+                <div class="menu-image-wrap">
+                  <img src="assets/menu2.PNG" alt="Caramel Milk Cake" />
+                </div>
+                <div class="menu-card-body">
+                  <h3>Caramel Milk Cake</h3>
+                  <p class="menu-desc">Rich caramel notes with a light, airy texture.</p>
+                  <div class="card-footer-row">
+                    <span class="menu-price">₦4,000</span>
+                    <a href="#booking" class="card-order-btn">Order</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="menu-card">
+                <div class="menu-image-wrap">
+                  <img src="assets/menu3.PNG" alt="Luxury Milk Cake" />
+                  <span class="card-badge premium">Premium</span>
+                </div>
+                <div class="menu-card-body">
+                  <h3>Luxury Milk Cake</h3>
+                  <p class="menu-desc">An elegant layered treat made for life's special moments.</p>
+                  <div class="card-footer-row">
+                    <span class="menu-price">₦4,500</span>
+                    <a href="#booking" class="card-order-btn">Order</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="menu-card">
+                <div class="menu-image-wrap">
+                  <img src="assets/menu4.PNG" alt="Special Milk Cake" />
+                </div>
+                <div class="menu-card-body">
+                  <h3>Special Milk Cake</h3>
+                  <p class="menu-desc">Beautifully finished and crafted for a premium taste experience.</p>
+                  <div class="card-footer-row">
+                    <span class="menu-price">₦5,000</span>
+                    <a href="#booking" class="card-order-btn">Order</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+          <div class="swiper-button-prev menu-nav"></div>
+          <div class="swiper-button-next menu-nav"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ GALLERY ═══════════════════ -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-intro">
+          <span class="section-label">Our Gallery</span>
+          <h2 class="section-title">Crafted with Love</h2>
+          <p class="section-copy">A visual taste of what we make — from classic creations to custom celebrations.</p>
+        </div>
+
+        <div class="gc3">
+          <!-- Featured hero image -->
+          <div class="gc3-featured">
+            <img src="assets/gallery1.png" alt="Featured" id="gc3-main-img" />
+            <video id="gc3-main-video" autoplay muted loop playsinline style="display:none;width:100%;height:100%;object-fit:cover;filter:brightness(0.65) saturate(0.9);"></video>
+            <div class="gc3-featured-overlay"></div>
+            <div class="gc3-featured-content">
+              <div class="gc3-toprow">
+                <div class="gc3-brand-tag">Flavour Feast Gallery</div>
+                <div class="gc3-counter"><span id="gc3-current">01</span> / 05</div>
+              </div>
+              <div class="gc3-featured-text">
+                <div class="gc3-featured-label">Signature Series</div>
+                <div class="gc3-featured-title" id="gc3-title">Classic<br/><em>Milk Cake</em></div>
+                <div class="gc3-featured-desc" id="gc3-desc">Soft layers, rich cream, made fresh each morning with the finest ingredients.</div>
+                <div class="gc3-featured-actions">
+                  <div class="gc3-expand-btn" id="gc3-expand">View full image</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thumbnail reel -->
+          <div class="gc3-reel">
+
+            <div class="gc3-thumb active" data-index="0" data-type="photo" data-src="assets/gallery1.png" data-title="Classic<br/><em>Milk Cake</em>" data-desc="Soft layers, rich cream, made fresh each morning with the finest ingredients.">
+              <img src="assets/gallery1.png" alt="Classic Milk Cake" />
+              <div class="gc3-thumb-overlay">
+                <div class="gc3-thumb-name">Classic Milk Cake</div>
+                <div class="gc3-thumb-type">Signature</div>
+              </div>
+            </div>
+
+            <div class="gc3-thumb" data-index="1" data-type="video" data-src="assets/gallery2.mp4" data-title="Behind the<br/><em>Scenes</em>" data-desc="Watch the magic happen — our bakers crafting each cake with care and precision.">
+              <img src="assets/gallery1.png" alt="Behind the Scenes" />
+              <div class="gc3-thumb-play"></div>
+              <div class="gc3-thumb-overlay">
+                <div class="gc3-thumb-name">Behind the Scenes</div>
+                <div class="gc3-thumb-type gc3-type-video">Video</div>
+              </div>
+            </div>
+
+            <div class="gc3-thumb" data-index="2" data-type="photo" data-src="assets/gallery3.png" data-title="Caramel<br/><em>Delight</em>" data-desc="Rich caramel notes layered to perfection — a fan favourite across Nigeria.">
+              <img src="assets/gallery3.png" alt="Caramel Delight" />
+              <div class="gc3-thumb-overlay">
+                <div class="gc3-thumb-name">Caramel Delight</div>
+                <div class="gc3-thumb-type">Fan Favourite</div>
+              </div>
+            </div>
+
+            <div class="gc3-thumb" data-index="3" data-type="video" data-src="assets/gallery4.mp4" data-title="The Making<br/><em>Of</em>" data-desc="From raw ingredients to a masterpiece — the full process in one beautiful video.">
+              <img src="assets/gallery3.png" alt="The Making Of" />
+              <div class="gc3-thumb-play"></div>
+              <div class="gc3-thumb-overlay">
+                <div class="gc3-thumb-name">The Making Of</div>
+                <div class="gc3-thumb-type gc3-type-video">Video</div>
+              </div>
+            </div>
+
+            <div class="gc3-thumb" data-index="4" data-type="photo" data-src="assets/gallery5.png" data-title="Luxury<br/><em>Edition</em>" data-desc="An elegant finish for life's most special moments — crafted for celebrations.">
+              <img src="assets/gallery5.png" alt="Luxury Edition" />
+              <div class="gc3-thumb-overlay">
+                <div class="gc3-thumb-name">Luxury Edition</div>
+                <div class="gc3-thumb-type">Premium</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom bar -->
+          <div class="gc3-bottom">
+            <div class="gc3-nav">
+              <button class="gc3-nav-btn" id="gc3-prev" aria-label="Previous">
+                <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button class="gc3-nav-btn" id="gc3-next" aria-label="Next">
+                <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+            <div class="gc3-progress">
+              <div class="gc3-progress-fill" id="gc3-progress-fill"></div>
+              <div class="gc3-progress-dot" id="gc3-progress-dot"></div>
+            </div>
+            <div class="gc3-caption-strip">3 photos · 2 videos</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════ BOOKING ═══════════════════ -->
+    <section class="book-section" id="booking">
+      <div class="book-inner">
+
+        <!-- LEFT — cream info panel -->
+        <div class="book-left">
+          <div class="book-left-top">
+            <div class="book-eyebrow">Flavour Feast</div>
+            <h2 class="book-headline">Reserve<br/>Your <em>Slice</em><br/>of Joy</h2>
+            <p class="book-sub">Place your order ahead of time and let us craft something extraordinary for you.</p>
+          </div>
+          <ul class="book-features">
+            <li class="book-feat">
+              <span class="book-feat-num">01</span>
+              <div class="book-feat-body">
+                <div class="book-feat-title">Fresh made to order</div>
+                <div class="book-feat-desc">Baked fresh — never pre-made or frozen.</div>
+              </div>
+            </li>
+            <li class="book-feat">
+              <span class="book-feat-num">02</span>
+              <div class="book-feat-body">
+                <div class="book-feat-title">Same-day delivery</div>
+                <div class="book-feat-desc">Order before noon, delivered same day.</div>
+              </div>
+            </li>
+            <li class="book-feat">
+              <span class="book-feat-num">03</span>
+              <div class="book-feat-body">
+                <div class="book-feat-title">Custom flavours</div>
+                <div class="book-feat-desc">Tell us what you want — we'll craft it.</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- RIGHT — dark pattern form panel -->
+        <div class="book-right">
+          <div class="book-right-bg"></div>
+          <div class="book-right-pattern"></div>
+          <div class="book-right-fade"></div>
+          <form class="book-form" id="book-form">
+            <div class="book-form-header">
+              <div class="book-form-label">Book an order</div>
+              <h3 class="book-form-title">Place Your Order</h3>
+              <div class="book-form-rule"></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="first_name" placeholder="e.g. Maryam" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="last_name" placeholder="e.g. Galadima" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Delivery Date</label>
+                <input type="date" id="date" name="delivery_date" required />
+              </div>
+              <div class="form-group">
+                <label for="person">Quantity</label>
+                <input type="text" id="person" name="quantity" placeholder="e.g. 2 cakes" required />
+              </div>
+            </div>
+            <button class="btn book-submit-btn" type="submit" id="book-submit-btn">
+              <span class="book-submit-text">Place My Order</span> <i class="ri-arrow-right-line"></i>
+            </button>
+            <p class="book-form-note" id="book-form-note">No payment needed · Confirmed within 2 hours</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════ ABOUT ═══════════════════ -->
+    <section class="about-section" id="about">
+      <div class="about-magazine">
+
+        <!-- top grid: image left, dark panel right -->
+        <div class="about-top">
+          <div class="about-img-wrap">
+            <img src="assets/about (2).PNG" alt="About Flavour Feast" />
+            <div class="about-img-overlay"></div>
+            <div class="about-img-caption">
+              <div class="about-img-caption-label">Est. 2019</div>
+              <div class="about-img-caption-title">Crafted<br/>with <em>Love</em></div>
+            </div>
+          </div>
+
+          <div class="about-panel">
+            <span class="about-panel-tag">About Us</span>
+            <h2 class="about-panel-headline">Our Story &amp;<br/><em>Sweet Mission</em></h2>
+            <div class="about-panel-rule"></div>
+            <p class="about-panel-body">Welcome to <strong>Flavour Feast</strong>, where every pastry tells a story of passion, flavour, and quality. Our journey began with a simple mission — to create a haven for milk cake lovers across Nigeria.</p>
+            <p class="about-panel-body">Using only the finest ingredients, our skilled bakers craft delightful pastries that satisfy your sweet cravings and bring a smile to your day.</p>
+            <a href="#booking" class="btn about-panel-cta">Order Yours Today →</a>
+          </div>
+        </div>
+
+        <!-- bottom stats bar -->
+        <div class="about-stats">
+          <div class="about-stat">
+            <div class="about-stat-num" data-target="5" data-suffix="+">0+</div>
+            <div class="about-stat-label">Years of Joy</div>
+            <div class="about-stat-desc">Crafting premium milk cakes since 2019</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num" data-target="2000" data-suffix="k+" data-display="2k+">0k+</div>
+            <div class="about-stat-label">Happy Customers</div>
+            <div class="about-stat-desc">Delivering smiles across Nigeria daily</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num" data-target="12" data-suffix="+">0+</div>
+            <div class="about-stat-label">Cake Flavours</div>
+            <div class="about-stat-desc">From classic milk to custom creations</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════ BLOG ═══════════════════ -->
+    <section class="blog-section" id="blog">
+      <div class="container">
+
+        <div class="blog-header">
+          <div>
+            <div class="blog-eyebrow">From Our Kitchen</div>
+            <h2 class="blog-title">Sweet <em>Stories</em><br/>&amp; Baking Tips</h2>
+          </div>
+          <a href="#" class="blog-all-link">View all posts →</a>
+        </div>
+
+        <div class="blog-grid">
+
+          <a href="https://vt.tiktok.com/ZSQQDesTw/" target="_blank" rel="noopener" class="blog-card">
+            <div class="blog-img">
+              <img src="assets/menu1.PNG" alt="Mandi Friday Special" />
+              <div class="blog-img-num">01</div>
+              <span class="blog-cat">TikTok</span>
+            </div>
+            <div class="blog-body">
+              <h3 class="blog-card-title">Mandi Friday <em>Special</em> 🍛</h3>
+              <p class="blog-excerpt">Mandi is available every Friday — DM or call to place your order ahead of time.</p>
+              <div class="blog-meta">
+                <span class="blog-date">Available Fridays</span>
+                <div class="blog-arr" aria-label="Read post">→</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/reel/DM4c6cKIMJ_/?igsh=cnY2OTJxcTNkb2Zi" target="_blank" rel="noopener" class="blog-card">
+            <div class="blog-img">
+              <img src="assets/menu2.PNG" alt="One Dessert, Endless Reasons" />
+              <div class="blog-img-num">02</div>
+              <span class="blog-cat">Instagram</span>
+            </div>
+            <div class="blog-body">
+              <h3 class="blog-card-title">One Dessert, Endless <em>Reasons</em> 🎉</h3>
+              <p class="blog-excerpt">A congrats, a birthday, or just because — we whip up the perfect treat for any event.</p>
+              <div class="blog-meta">
+                <span class="blog-date">Celebrations</span>
+                <div class="blog-arr" aria-label="Read post">→</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/reel/DQZ1U7LDcsG/" target="_blank" rel="noopener" class="blog-card">
+            <div class="blog-img">
+              <img src="assets/menu3.PNG" alt="Sweetness and Style for Every Event" />
+              <div class="blog-img-num">03</div>
+              <span class="blog-cat">Instagram</span>
+            </div>
+            <div class="blog-body">
+              <h3 class="blog-card-title">Sweetness &amp; Style for <em>Every Event</em> ✨</h3>
+              <p class="blog-excerpt">Your event deserves a flavour feast — let us serve sweetness and style.</p>
+              <div class="blog-meta">
+                <span class="blog-date">Events</span>
+                <div class="blog-arr" aria-label="Read post">→</div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- blog dot indicators — mobile only -->
+        <div class="blog-dots" id="blog-dots">
+          <button class="blog-dot active" data-index="0"></button>
+          <button class="blog-dot" data-index="1"></button>
+          <button class="blog-dot" data-index="2"></button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer class="footer" id="footer">
+
+      <!-- top grid -->
+      <div class="footer-top">
+        <div class="footer-grid">
+
+          <div class="footer-brand">
+            <div class="footer-brand-top-row">
+              <div class="footer-logo-mark">FF</div>
+              <div class="footer-brand-name">Flavour<br/><em>Feast</em></div>
+            </div>
+
+            <!-- mobile-only tagline (Concept 2) -->
+            <div class="footer-brand-tagline">Every bite tells a <em>story.</em></div>
+
+            <p class="footer-brand-desc">Premium milk cakes crafted with love, made for every sweet occasion across Nigeria.</p>
+            <div class="footer-socials">
+              <a href="https://www.instagram.com/flavor__feast?igsh=MXNmd3cxdDQ2Z3FlNQ==" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social"><i class="ri-instagram-line"></i></a>
+              <a href="https://www.tiktok.com/@flavor_feastt?_r=1&_t=ZS-97CoAifK5bQ" target="_blank" rel="noopener" aria-label="TikTok" class="footer-social"><i class="ri-tiktok-fill"></i></a>
+              <a href="https://wa.me/2348107755333" target="_blank" rel="noopener" aria-label="WhatsApp" class="footer-social"><i class="ri-whatsapp-line"></i></a>
+            </div>
+
+            <!-- mobile-only CTA (Concept 2) -->
+            <a href="#booking" class="btn footer-brand-cta">Order Now →</a>
+          </div>
+
+          <div class="footer-cols-grid">
+            <div class="footer-col">
+              <div class="footer-col-title">Quick Links</div>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#booking">Book Order</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <div class="footer-col-title">Blog</div>
+              <ul>
+                <li><a href="https://vt.tiktok.com/ZSQQDesTw/" target="_blank" rel="noopener">Mandi Friday Special</a></li>
+                <li><a href="https://www.instagram.com/reel/DM4c6cKIMJ_/?igsh=cnY2OTJxcTNkb2Zi" target="_blank" rel="noopener">One Dessert, Endless Reasons</a></li>
+                <li><a href="https://www.instagram.com/reel/DQZ1U7LDcsG/" target="_blank" rel="noopener">Sweetness &amp; Style for Events</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-col footer-contact-col">
+            <div class="footer-col-title">Contact</div>
+            <ul class="footer-contact-list">
+              <li><i class="ri-map-pin-line"></i> Abuja, Nigeria</li>
+              <li><i class="ri-phone-line"></i> <a href="tel:+2348107755333">+234 810 775 5333</a></li>
+              <li><i class="ri-mail-line"></i> <a href="mailto:rahamamustapha2017@gmail.com">rahamamustapha2017@gmail.com</a></li>
+              <li><i class="ri-time-line"></i> Mon–Sat, 8am – 8pm</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- tagline + CTA strip (desktop only) -->
+      <div class="footer-mid">
+        <div class="footer-tagline">Every bite tells a <em>story.</em></div>
+        <a href="#booking" class="btn footer-cta-btn">Order Now →</a>
+      </div>
+
+      <!-- bottom bar -->
+      <div class="footer-bar">
+        <span class="footer-bar-copy">© 2026 <strong>Flavour Feast</strong>. All rights reserved. Built by MohXDev.</span>
+        <div class="footer-bar-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
